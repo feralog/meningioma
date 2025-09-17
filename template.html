@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TÍTULO DA APRESENTAÇÃO] | [SUBTÍTULO]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* CUSTOMIZAR CORES DO GRADIENTE ACIMA */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .slides-grid {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .slide-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .slide-link:hover {
+            background: #fff;
+            border-color: #667eea;
+            /* CUSTOMIZAR COR DA BORDA HOVER */
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .slide-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            /* CUSTOMIZAR CORES DO GRADIENTE DOS NÚMEROS */
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .slide-title {
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .action-btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            /* CUSTOMIZAR CORES DO GRADIENTE DOS BOTÕES */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .action-btn.alt-color {
+            background: linear-gradient(135deg, #ff5757, #ff9c57);
+            /* CUSTOMIZAR CORES DO GRADIENTE ALTERNATIVO */
+        }
+
+        .info {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            .slide-title {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>[TÍTULO PRINCIPAL DA APRESENTAÇÃO]</h1>
+        <p class="subtitle">[SUBTÍTULO OU DESCRIÇÃO]</p>
+        
+        <div class="slides-grid">
+            <!-- INÍCIO DOS SLIDES - ADICIONAR/REMOVER CONFORME NECESSÁRIO -->
+            <a href="slide1.html" class="slide-link">
+                <div class="slide-number">1</div>
+                <div class="slide-title">[Título do Slide 1]</div>
+            </a>
+            
+            <a href="slide2.html" class="slide-link">
+                <div class="slide-number">2</div>
+                <div class="slide-title">[Título do Slide 2]</div>
+            </a>
+            
+            <a href="slide3.html" class="slide-link">
+                <div class="slide-number">3</div>
+                <div class="slide-title">[Título do Slide 3]</div>
+            </a>
+            
+            <a href="slide4.html" class="slide-link">
+                <div class="slide-number">4</div>
+                <div class="slide-title">[Título do Slide 4]</div>
+            </a>
+            
+            <a href="slide5.html" class="slide-link">
+                <div class="slide-number">5</div>
+                <div class="slide-title">[Título do Slide 5]</div>
+            </a>
+            
+            <a href="slide6.html" class="slide-link">
+                <div class="slide-number">6</div>
+                <div class="slide-title">[Título do Slide 6]</div>
+            </a>
+            
+            <a href="slide7.html" class="slide-link">
+                <div class="slide-number">7</div>
+                <div class="slide-title">[Título do Slide 7]</div>
+            </a>
+            
+            <a href="slide8.html" class="slide-link">
+                <div class="slide-number">8</div>
+                <div class="slide-title">[Título do Slide 8]</div>
+            </a>
+            
+            <a href="slide9.html" class="slide-link">
+                <div class="slide-number">9</div>
+                <div class="slide-title">[Título do Slide 9]</div>
+            </a>
+            
+            <a href="slide10.html" class="slide-link">
+                <div class="slide-number">10</div>
+                <div class="slide-title">[Título do Slide 10]</div>
+            </a>
+            <!-- FIM DOS SLIDES -->
+        </div>
+        
+        <a href="apresentacao-completa.html" class="action-btn alt-color">
+            ▶ [TEXTO DO BOTÃO 1 - MODO APRESENTAÇÃO]
+        </a>
+        
+        <a href="slide1.html" class="action-btn">
+            ▶ [TEXTO DO BOTÃO 2 - VISUALIZAR SLIDES]
+        </a>
+        
+        <p class="info">
+            [INFORMAÇÃO LINHA 1]<br>
+            [INFORMAÇÃO LINHA 2]
+        </p>
+    </div>
+</body>
+</html>
