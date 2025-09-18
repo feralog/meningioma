@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 15 - Discussão: Crescimento Atípico | Meningioma Gigante</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #4a90e2 0%, #7b68ee 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .slide-container {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 20px;
+            padding: 0;
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16/9;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-header {
+            background: linear-gradient(135deg, #4a90e2, #7b68ee);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 80px;
+        }
+
+        .slide-number {
+            font-size: 18px;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        .slide-title {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        .slide-content {
+            flex: 1;
+            padding: 50px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #333;
+            background: white;
+        }
+
+        .content-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .content-list {
+            list-style: none;
+            font-size: 22px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .content-list li {
+            margin-bottom: 20px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .content-list li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+
+        .sub-list {
+            margin-top: 15px;
+            margin-left: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .sub-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+        }
+
+        .sub-list li::before {
+            content: "→";
+            color: #7b68ee;
+        }
+
+        .highlight {
+            color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .critical-highlight {
+            color: #e74c3c;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #4a90e2, #7b68ee);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+        }
+
+        .nav-btn.secondary {
+            background: rgba(108, 117, 125, 0.1);
+            color: #6c757d;
+            border: 2px solid #dee2e6;
+        }
+
+        .nav-btn.secondary:hover {
+            background: rgba(108, 117, 125, 0.2);
+        }
+
+        @media (max-width: 1024px) {
+            .slide-container {
+                max-width: 95vw;
+                margin: 10px;
+            }
+
+            .slide-content {
+                padding: 30px 50px;
+            }
+
+            .content-title {
+                font-size: 28px;
+            }
+
+            .content-list {
+                font-size: 18px;
+            }
+
+            .sub-list {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide-content {
+                padding: 20px 30px;
+            }
+
+            .content-title {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            .content-list {
+                font-size: 16px;
+            }
+
+            .sub-list {
+                font-size: 14px;
+            }
+
+            .slide-header {
+                padding: 15px 30px;
+                min-height: 60px;
+            }
+
+            .slide-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-header">
+            <div class="slide-number">Slide 15 / 21</div>
+            <div class="slide-title">DISCUSSÃO - CRESCIMENTO ATÍPICO</div>
+            <div style="width: 80px;"></div>
+        </div>
+
+        <div class="slide-content">
+            <h2 class="content-title">Velocidade de Crescimento</h2>
+
+            <ul class="content-list">
+                <li><strong>Típico:</strong> 2,4mm/ano</li>
+                <li><strong class="critical-highlight">Este caso: 0 → 13cm em 3 anos</strong></li>
+                <li><strong>Possíveis explicações:</strong>
+                    <ul class="sub-list">
+                        <li>Grau II (atípico)</li>
+                        <li>Maior proliferação celular</li>
+                        <li>Biologia tumoral agressiva</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navigation">
+            <a href="slide14.html" class="nav-btn secondary">← Anterior</a>
+            <a href="index.html" class="nav-btn secondary">Menu</a>
+            <a href="slide16.html" class="nav-btn">Próximo →</a>
+        </div>
+    </div>
+</body>
+</html>
